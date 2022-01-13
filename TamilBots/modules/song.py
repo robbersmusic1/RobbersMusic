@@ -27,7 +27,7 @@ async def song(client, message):
     user_id = message.from_user["id"]
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
-    if args.startswith(" ")
+    if args.startswith("")
         await message.reply("Bir şarkı adı girin. Kontrol /help")
         return ""
     status = await message.reply("🚀 🔎 🔎Arama yapılıyor ... 🎶 Lutfen Bekleyiniz⏳️en fazla 1 Dk Sürer[🚀](https://telegra.ph/file/67f41ae52a85dfc0551ae.mp4)")
