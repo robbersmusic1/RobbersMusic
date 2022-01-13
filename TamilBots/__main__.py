@@ -9,15 +9,17 @@ from TamilBots.TamilBots import ignore_blacklisted_users
 from TamilBots.sql.chat_sql import add_chat_to_db
 
 start_text = """
-👋 𝗛𝗲𝗹𝗹𝗼 [{}](tg://user?id={}),
+👋 Merhaba [{}](tg://user?id={}),
 
-\n\n𝗜 𝗔𝗺 🎸𝐒𝐨𝐧𝐠 𝐏𝐥𝐚𝐲 𝐁𝐨𝐭[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
+\n\n Ben  🎸Robbers Music Bot[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)
 
-I'M Music Bot By @TamilBots 🤖
+Bot Yapımcısı @armor_06 , @anteplibebekk🤖
 
-𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗡𝗮𝗺𝗲 𝗢𝗳 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁... 😍🥰🤗
 
-𝐄𝐠. ```/song Faded```
+
+İstediğiniz Şarkının Adını Gönderin ... 😍🥰🤗
+
+Örnek. ```/song Şarkı ismi```
 """
 
 owner_help = """
@@ -36,9 +38,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 👬", url="http://t.me/TamilSupport"),
+           [[InlineKeyboardButton(text="Destek 👬", url="http://t.me/TamilSupport"),
              InlineKeyboardButton(
-                        text="𝐀𝐃𝐃 𝐌𝐄 🤗", url="http://t.me/SongProBot?startgroup=true"
+                        text="Beni ekle 🤗", url="http://t.me/SongProBot?startgroup=true"
                     )
                 ]
             ]
